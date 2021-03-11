@@ -1,6 +1,7 @@
 package ro.ase.cts.clase;
 
 import java.io.StringReader;
+import java.util.Arrays;
 
 public abstract class Aplicant{
 	protected String nume;
@@ -41,10 +42,7 @@ public abstract class Aplicant{
 	public void setPunctaj(int punctaj) {
 		this.punctaj = punctaj;
 	}
-	
-	
 
-	
 	public Aplicant() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -65,5 +63,14 @@ public abstract class Aplicant{
 	public void setDenumiriProiecte(int nrProiecte, String[] denumireProiect){
 	    this.nr_proiecte = nrProiecte;
 	    this.denumireProiect = denumireProiect;
+    }
+
+    public abstract void afiseazaSumaFinantata();
+
+    @Override
+    public String toString() {
+        return "Nume=" + nume + ", Prenume=" + prenume
+                + ", Varsta=" + varsta + ", Punctaj=" + punctaj + ", Nr_proiecte=" + nr_proiecte + ", DenumireProiect="
+                + Arrays.toString(denumireProiect);
     }
 }
