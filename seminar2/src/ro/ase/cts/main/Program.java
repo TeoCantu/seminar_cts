@@ -12,14 +12,14 @@ import java.util.List;
 
 public class Program {
 
-	public static List<Aplicant> readAplicant(String fisier, AplicantReader aplicantReader) throws FileNotFoundException, NumberFormatException {
-		return aplicantReader.readAplicants(fisier);
+	public static List<Aplicant> readAplicants(AplicantReader aplicantReader) throws FileNotFoundException, NumberFormatException {
+		return aplicantReader.readAplicants();
 
 	}
 	public static void main(String[] args) {
 		List<Aplicant> listaAplicanti;
 		try {
-			listaAplicanti = readAplicant("studenti.txt", new StudentReader());
+			listaAplicanti = readAplicants(new AngajatReader("angajati.txt"));
 			for(Aplicant aplicant:listaAplicanti)
 				System.out.println(aplicant.toString());
 		} catch (FileNotFoundException e) {

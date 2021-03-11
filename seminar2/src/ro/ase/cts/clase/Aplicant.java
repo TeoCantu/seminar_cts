@@ -1,5 +1,7 @@
 package ro.ase.cts.clase;
 
+import java.io.StringReader;
+
 public abstract class Aplicant{
 	protected String nume;
 	protected String prenume;
@@ -59,8 +61,9 @@ public abstract class Aplicant{
 	public int getNr_proiecte() {
 		return nr_proiecte;
 	}
-	public void setNr_proiecte(int nr_proiecte) {
-		this.nr_proiecte = nr_proiecte;
-	}
 
+	public void setDenumiriProiecte(int nrProiecte, String[] denumireProiect){
+	    this.nr_proiecte = nrProiecte;
+	    this.denumireProiect = denumireProiect;
+    }
 }
