@@ -1,6 +1,7 @@
 package ro.ase.cts.main;
 
 import org.omg.Messaging.SyncScopeHelper;
+import ro.ase.cts.clase.Cartita;
 import ro.ase.cts.clase.DepartamentFinanciar;
 import ro.ase.cts.clase.DepartamentFinanciarEager;
 
@@ -24,6 +25,18 @@ public class Program {
 
         System.out.println(departamentFinanciar1.toString());
         System.out.println(departamentFinanciar2.toString());
+
+        Cartita cartita1 = Cartita.getInstance(2, 5.3, "Cici");
+        Cartita cartita2 = Cartita.getInstance(3, 2.5, "Fifi");
+
+        System.out.println(cartita1.toString());
+        System.out.println(cartita2.toString());
+
+        cartita1.setVarsta(5);
+        cartita2.setGreutate(7.9);
+
+        System.out.println(cartita1.toString());
+        System.out.println(cartita2.toString());
 
     }
 }
