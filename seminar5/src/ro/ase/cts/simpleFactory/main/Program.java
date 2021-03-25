@@ -6,9 +6,6 @@ import ro.ase.cts.simpleFactory.clase.TipPersonal;
 
 public class Program {
     public static void main(String[] args){
-
-
-
         try {
             // cand am createPersonalSpital ca metoda
             // FactoryPersonal factoryPersonal = new FactoryPersonal(); // cand am ca metoda
