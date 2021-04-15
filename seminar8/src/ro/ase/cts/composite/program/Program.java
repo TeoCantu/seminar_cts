@@ -22,6 +22,6 @@ public class Program {
         meniu.addComponenta(sectiuneDesert);
         meniu.afiseazaDescriere();
 
-        
+
     }
 }
