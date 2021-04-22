@@ -12,6 +12,6 @@ public class Program {
 
         client.setModPlata(new Card());
         client.platesteNota(23.5);
-        
+
     }
 }
