@@ -1,8 +1,10 @@
 package teste;
 
+import categorii.TesteNormale;
 import clase.Grupa;
 import clase.IStudent;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import teste.dubluri.StudentDummy;
 
 import static org.junit.Assert.*;
@@ -10,6 +12,7 @@ import static org.junit.Assert.*;
 public class GrupaTestWithStudentDummy {
 
     @Test
+    @Category({TesteNormale.class})
     public void testAdaugaStudent() {
         IStudent student = new StudentDummy();
         Grupa grupa = new Grupa(1077);
@@ -18,6 +21,7 @@ public class GrupaTestWithStudentDummy {
     }
 
     @Test
+    @Category({TesteNormale.class})
     public void testAdaugaStudenti() {
         Grupa grupa =new Grupa(1010);
         IStudent student1 = new StudentDummy();
